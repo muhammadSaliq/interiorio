@@ -15,7 +15,7 @@ const [Delete , setdelete] = useState(false);
 
 const getAllProducts = async () => {
   try {
-    const response = await axios.get(`http://localhost:8000/Archiimage`);
+    const response = await axios.get(`https://dull-leopard.cyclic.app/Archiimage`);
     console.log("response: ", response);
     console.log(products);
     setProducts(response.data.data);

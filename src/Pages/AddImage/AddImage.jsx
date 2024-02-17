@@ -57,7 +57,7 @@ console.log("img",image1)
     try {
         if (service && project && image1) {
       const response = await axios.post(
-        "http://localhost:8000/addimagetest",
+        "https://dull-leopard.cyclic.app/addimagetest",
         formData,
         {
           headers: {
