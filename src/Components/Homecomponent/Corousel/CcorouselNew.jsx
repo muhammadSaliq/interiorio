@@ -133,7 +133,7 @@ function CcorouselNew() {
           <input id="zipcode" type="number" placeholder="Your Zipcode" required className='h-12 rounded-xl border-b-2 bg-transparent border-b-amber-500 p-2 w-full' />
         </div>
         <button type="submit" className="bg-amber-400 rounded-xl h-14">Book Design Session</button>
-        <p className="text-xs font-serif font-semibold text-center">Meet A Designer</p>
+        <p className="text-[10px] font-serif  text-center">By submitting this form, you agree to the privacy policy and terms of use</p>
 
       </form>
     </Card>
