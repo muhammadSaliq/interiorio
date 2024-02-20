@@ -31,22 +31,22 @@ const NavbarMain = () => {
             <Navbar.Link className='text-xl divhead font-semibold text-black '>  Services</Navbar.Link>
           }
         >
-          <Link to={"/interiordesign"}>
+          <Link to={"/modularkitchen"}>
           <Dropdown.Item >Modular Kitchen</Dropdown.Item>
           </Link>
-          <Link to={"/exteriordetails"}>
+          <Link to={"/bedrooms"}>
           <Dropdown.Item >Bed Room</Dropdown.Item>
           </Link>
-          <Link to={"/Architecturedetails"}>
+          <Link to={"/livingroom"}>
           <Dropdown.Item>Living Room</Dropdown.Item>
           </Link>
           <Link to={"/Furnituredetails"}>
           <Dropdown.Item >Custom Made Furniture</Dropdown.Item>
           </Link>
-          <Link to={"/Landscapingdetails"}>
+          <Link to={"/bathroom"}>
           <Dropdown.Item >Bathroom</Dropdown.Item>
           </Link>
-          <Link to={"/Studiodetails"}>
+          <Link to={"/Homeoffice"}>
           <Dropdown.Item >Home Office</Dropdown.Item>
           </Link>
         </Dropdown>

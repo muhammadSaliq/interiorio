@@ -20,12 +20,12 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path={"/"} element={<Home />} />
-          <Route path={"/Architecturedetails"} element={<ArchitectDetails />} />
-          <Route path={"/interiordesign"} element={<InteriorDetails />} />
-          <Route path={"/exteriordetails"} element={<ExteriorDetails />} />
+          <Route path={"/livingroom"} element={<ArchitectDetails />} />
+          <Route path={"/modularkitchen"} element={<InteriorDetails />} />
+          <Route path={"/bedrooms"} element={<ExteriorDetails />} />
           <Route path={"/Furnituredetails"} element={<FurnitureDetails />} />
-          <Route path={"/Landscapingdetails"} element={<LandscapingDetails />} />
-          <Route path={"/Studiodetails"} element={<StudioDetails />} />
+          <Route path={"/bathroom"} element={<LandscapingDetails />} />
+          <Route path={"/Homeoffice"} element={<StudioDetails />} />
           <Route path={"/Album"} element={<Gallery />} />
           <Route path={"/About"} element={<About />} />
           <Route path={"/Addsimage"} element={<AddImage />} />

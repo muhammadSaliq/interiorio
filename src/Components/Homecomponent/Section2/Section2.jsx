@@ -110,17 +110,17 @@ const divStyle = {
   </div>
 </div>
     <div className='flex  justify-evenly flex-wrap my-4 ' >
-      <Link to={'/interiordesign'}>
+      <Link to={'/modularkitchen'}>
     <div style={containerStyle} className='border-4 rounded-xl border-amber-400 mt-4 hover:opacity-80 hover:scale-x-110 transition duration-500 cursor-pointer object-cover ' onMouseEnter={()=> {sethover(true)}} onMouseLeave={()=> {sethover(false)}}>
 <p className='font-bold text-2xl text-white sm:text-2xl lg:text-4xl text-center'> Modular Kitchen</p>
 </div>
 </Link> 
-<Link to={"/exteriordetails"}>
+<Link to={"/bedrooms"}>
 <div style={containerStyle2} className='mt-4 border-4 border-amber-400 rounded-xl hover:opacity-80 hover:scale-x-110 transition duration-500 cursor-pointer object-cover ' onMouseEnter={()=> {sethover(true)}} onMouseLeave={()=> {sethover(false)}}>
         <p className='font-bold text-2xl text-white sm:text-2xl lg:text-4xl text-center'>Bed Room</p>
       </div>
       </Link>
-      <Link to={"/Architecturedetails"}>
+      <Link to={"/livingroom"}>
       <div style={containerStyle3} className='mt-4 border-4 border-amber-400 rounded-xl hover:opacity-80 hover:scale-x-110 transition duration-500 cursor-pointer object-cover ' onMouseEnter={()=> {sethover(true)}} onMouseLeave={()=> {sethover(false)}}>
         <p className='font-bold text-2xl text-white sm:text-2xl lg:text-4xl text-center'>LLiving Room</p>
       </div>
@@ -130,15 +130,15 @@ const divStyle = {
     
       <Link to={"/Furnituredetails"}>
     <div style={containerStyle4} className='mt-4 border-4 border-amber-400 rounded-xl hover:opacity-80 hover:scale-x-110 transition duration-500 cursor-pointer object-cover ' onMouseEnter={()=> {sethover(true)}} onMouseLeave={()=> {sethover(false)}}>
-        <p className='font-bold text-2xl text-white sm:text-2xl lg:text-4xl text-center'> Bathroom</p>
+        <p className='font-bold text-2xl text-white sm:text-2xl lg:text-4xl text-center'> Custom Made Furniture</p>
       </div>
       </Link>
-      <Link to={"/Landscapingdetails"}>
+      <Link to={"/bathroom"}>
       <div style={containerStyle5} className='mt-4 border-4 border-amber-400 rounded-xl hover:opacity-80 hover:scale-x-110 transition duration-500 cursor-pointer object-cover ' onMouseEnter={()=> {sethover(true)}} onMouseLeave={()=> {sethover(false)}}>
-        <p className='font-bold text-2xl text-white sm:text-2xl lg:text-4xl text-center'>Custom Made Furniture</p>
+        <p className='font-bold text-2xl text-white sm:text-2xl lg:text-4xl text-center'>Bathroom</p>
       </div>
       </Link>
-      <Link to={"/Studiodetails"}>
+      <Link to={"/Homeoffice"}>
       <div style={containerStyle6} className='mt-4 border-4 border-amber-400 rounded-xl hover:opacity-80 hover:scale-x-110 transition duration-500 cursor-pointer object-cover ' onMouseEnter={()=> {sethover(true)}} onMouseLeave={()=> {sethover(false)}}>
         <p className='font-bold text-2xl text-white sm:text-2xl lg:text-4xl text-center'> Home Office</p>
       </div>

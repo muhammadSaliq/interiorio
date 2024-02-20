@@ -45,22 +45,22 @@ function FooterBar() {
           <div>
               <Footer.Title title="Services" className='text-black dark:text-black font-serif'/>
               <Footer.LinkGroup col>
-                <Link to={'/interiordesign'}>
+                <Link to={'/modularkitchen'}>
                 <Footer.Link className='text-black font-serif'>Interior Design</Footer.Link>
                 </Link>
-                <Link to={'/exteriordetails'}>
+                <Link to={'/bedrooms'}>
                 <Footer.Link className='text-black font-serif'>Exterior Design</Footer.Link>
                 </Link>
-                <Link to={'/Architecturedetails'}>
+                <Link to={'/livingroom'}>
                 <Footer.Link className='text-black font-serif'>Construction</Footer.Link>
                 </Link>
                 <Link to={'/Furnituredetails'}>
                 <Footer.Link className='text-black font-serif'>Furniture</Footer.Link>
                 </Link>
-                <Link to={'/Landscapingdetails'}>
+                <Link to={'/bathroom'}>
                 <Footer.Link className='text-black font-serif'>Gardening</Footer.Link>
                 </Link>
-                <Link to={'/Studiodetails'}>
+                <Link to={'/Homeoffice'}>
                 <Footer.Link className='text-black font-serif'>Studio</Footer.Link>
                 </Link>
               </Footer.LinkGroup>
