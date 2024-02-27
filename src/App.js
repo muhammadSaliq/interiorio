@@ -9,11 +9,16 @@ import StudioDetails from "./Pages/Detailpage/Studiodetail/StudioDetails";
 import Gallery from "./Pages/Gallery/Gallery";
 import Home from "./Pages/Home/Home";
 import ManageImages from "./Pages/Manageimages/ManageImages";
+import AddShop from "./Pages/Shop/AddShop";
+import ManageShop from "./Pages/Shop/ManageShop";
+import Shop from "./Pages/Shop/Shop";
 import logo from "./logo.svg";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   let backurl = "https://dull-leopard.cyclic.ap p"
+  let newbackurl = "https://cobalt-blue-jellyfish-boot.cyclic.ap p"
+
   let csssticky = "fixed z-40 left-0 right-0"
   return (
     <div className="App">
@@ -30,6 +35,9 @@ function App() {
           <Route path={"/About"} element={<About />} />
           <Route path={"/Addsimage"} element={<AddImage />} />
           <Route path={"/manageimage"} element={<ManageImages />} />
+          <Route path={"/shop"} element={<Shop />} />
+          <Route path={"/addshop"} element={<AddShop />} />
+          <Route path={"/manageshop"} element={<ManageShop />} />
 
 
         </Routes>

@@ -4,7 +4,7 @@ import axios from 'axios';
 import { Card } from 'flowbite-react';
 import { useNavigate } from 'react-router-dom';
 
-const ManageImages = () => {
+const ManageShop = () => {
   const navigate = useNavigate();
   const [products, setProducts] = useState([]);
   const [productsBoolean, setProductsBoolean] = useState(false);
@@ -45,7 +45,7 @@ const ManageImages = () => {
       };
       const getAllProducts = async () => {
         try {
-          const response = await axios.get(`https://cobalt-blue-jellyfish-boot.cyclic.app/Allimage`);
+          const response = await axios.get(`https://cobalt-blue-jellyfish-boot.cyclic.app/Allshop`);
           console.log("response: ", response);
           console.log(products);
           setProducts(response.data.data);
@@ -55,7 +55,7 @@ const ManageImages = () => {
       };
       const deleteData = async (id)=>{
         try {
-          const response = await axios.delete(`https://cobalt-blue-jellyfish-boot.cyclic.app/imagereq/${id}`)
+          const response = await axios.delete(`https://cobalt-blue-jellyfish-boot.cyclic.app/deleteshop/${id}`)
           console.log("response: ", response.data);
           setdelete(!Delete)
         } catch (error) {
@@ -69,7 +69,7 @@ const ManageImages = () => {
     }, [Delete , productsBoolean ])
   return (
         <>
-        <button style={buttonStyle2} onClick={()=>{navigate(`/Addsimage`, { replace: true }) }} className='inline-block bg-red-700'>Add Images</button>
+        <button style={buttonStyle2} onClick={()=>{navigate(`/addshop`, { replace: true }) }} className='inline-block bg-red-700'>Add shops</button>
 
         <div className='flex  justify-evenly flex-wrap my-4'>
           {products.map((value) => (
@@ -96,4 +96,4 @@ const ManageImages = () => {
   );
 }
 
-export default ManageImages;
+export default ManageShop;

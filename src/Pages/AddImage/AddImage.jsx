@@ -57,7 +57,7 @@ console.log("img",image1)
     try {
         if (service && project && image1) {
       const response = await axios.post(
-        "https://dull-leopard.cyclic.app/addimagetest",
+        "https://cobalt-blue-jellyfish-boot.cyclic.app/addimagetest",
         formData,
         {
           headers: {
@@ -78,6 +78,7 @@ console.log("img",image1)
   return (
         <>
                 <button style={buttonStyle2} onClick={()=>{navigate(`/manageimage`, { replace: true }) }} className='inline-block bg-red-700'>Delete Images</button>
+                <button style={buttonStyle2} onClick={()=>{navigate(`/addshop`, { replace: true }) }} className='inline-block bg-red-700'>Add Shop</button>
 
 <h1 className='text-3xl font-bold text-black text-center mt-5'>Add images</h1>
         <div className='mx-10 my-6 '>
@@ -85,12 +86,12 @@ console.log("img",image1)
         <div className="relative z-0 w-full mb-6 group">
       <select id="project" name='project' onChange={(event) => {setservice (event.target.value); }} className="bg-white text-black text-sm rounded-lg focus:ring-blue-500  block w-full p-2.5 0   ">
     <option value="Select Service">Select Service</option>
-    <option value="Interior Design">Interior Design</option>
-        <option value="Exterior Design">Exterior Design</option>
-        <option value="Architecture & Construction">Architecture & Construction</option>
+    <option value="Modular Kitchen">Modular Kitchen</option>
+        <option value="Bed Room">Bed Room</option>
+        <option value="Living Room">Living Room</option>
         <option value="Custom Made Furniture">Custom Made Furniture</option>
-        <option value="Landscaping & Gardening">Landscaping & Gardening</option>
-        <option value="3D Studio">3D Studio</option>
+        <option value="Bathroom">Bathroom</option>
+        <option value="Home Office">Home Office</option>
 
 </select>
 

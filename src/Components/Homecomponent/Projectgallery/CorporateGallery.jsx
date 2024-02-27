@@ -14,7 +14,7 @@ const [Delete , setdelete] = useState(false);
 
 const getAllProducts = async () => {
   try {
-    const response = await axios.get(`https://dull-leopard.cyclic.app/corporateimage`);
+    const response = await axios.get(`https://cobalt-blue-jellyfish-boot.cyclic.app/corporateimage`);
     console.log("response: ", response);
     console.log(products);
     setProducts(response.data.data);
