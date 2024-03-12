@@ -12,6 +12,7 @@ import ManageImages from "./Pages/Manageimages/ManageImages";
 import AddShop from "./Pages/Shop/AddShop";
 import ManageShop from "./Pages/Shop/ManageShop";
 import Shop from "./Pages/Shop/Shop";
+import Contact from "./Pages/contact/Contact";
 import logo from "./logo.svg";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -38,6 +39,7 @@ function App() {
           <Route path={"/shop"} element={<Shop />} />
           <Route path={"/addshop"} element={<AddShop />} />
           <Route path={"/manageshop"} element={<ManageShop />} />
+          <Route path={"/Contact"} element={<Contact />} />
 
 
         </Routes>
