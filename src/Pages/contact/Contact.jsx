@@ -21,27 +21,28 @@ const Contact = () => {
 
     <div class="flex flex-wrap">
       <div class="mb-12 w-full shrink-0 grow-0 basis-auto md:px-3 lg:mb-0 lg:w-5/12 lg:px-6">
-        <form>
+        <form action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="37d14295-1269-448f-ae1a-921e8a9063b8"></input>
           <div class="relative mb-6" data-te-input-wrapper-init>
-            <input type="text"  
-              class="peer block min-h-[auto] w-full rounded border border-amber-500 bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear  peer-focus:text-primary  motion-reduce:transition-none   dark:placeholder:text-neutral-200 dark:peer-focus:text-primary "
+            <input type="text"  name="name" required
+              class="peer block min-h-[auto] w-full rounded border border-amber-500 bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear  peer-focus:text-primary  motion-reduce:transition-none   dark:placeholder:text-black dark:peer-focus:text-primary "
               id="exampleInput90" placeholder="Name" />
             
           </div>
           <div class="relative mb-6" data-te-input-wrapper-init>
-            <input type="email"
-              class="peer block min-h-[auto] w-full rounded border border-amber-500 bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear  peer-focus:text-primary  motion-reduce:transition-none   dark:placeholder:text-neutral-200 dark:peer-focus:text-primary "
+            <input type="email" name="email" required
+              class="peer block min-h-[auto] w-full rounded border border-amber-500 bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear  peer-focus:text-primary  motion-reduce:transition-none   dark:placeholder:text-black dark:peer-focus:text-primary "
               id="exampleInput91" placeholder="Email address" />
             
           </div>
           <div class="relative mb-6" data-te-input-wrapper-init>
-            <textarea
-              class="peer block min-h-[auto] w-full rounded border border-amber-500 bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear  peer-focus:text-primary  motion-reduce:transition-none   dark:placeholder:text-neutral-200 dark:peer-focus:text-primary "
+            <textarea name="message" required
+              class="peer block min-h-[auto] w-full rounded border border-amber-500 bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear  peer-focus:text-primary  motion-reduce:transition-none   dark:placeholder:text-black dark:peer-focus:text-primary "
             
               id="exampleFormControlTextarea1" rows="3" placeholder="Your message"></textarea>
             
           </div>
-          <button   type="button" data-te-ripple-init data-te-ripple-color="light"
+          <button   type="submit" data-te-ripple-init data-te-ripple-color="light"
             class="bg-amber-500 px-12 py-2 text-black rounded-xl font-bold">
             Submit
           </button>

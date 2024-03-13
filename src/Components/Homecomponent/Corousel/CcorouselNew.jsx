@@ -110,27 +110,28 @@ function CcorouselNew() {
       </div>
       <div style={containerStyle3} >
       <Card className="w-80 bg-transparent dark:bg-transparent border-0 shadow-xl">
-      <form className="flex flex-col gap-4">
+      <form action="https://api.web3forms.com/submit" method="POST" className="flex flex-col gap-4">
+      <input type="hidden" name="access_key" value="37d14295-1269-448f-ae1a-921e8a9063b8"/>
         <p className="text-2xl font-mono font-semibold">Meet A Designer</p>
         <div>
           <div className="mb-2 block ">
           </div>
-          <input id="name" type="text" placeholder="Your Name" required className='h-12 rounded-xl border-b-2 bg-transparent border-b-amber-500 focus:border-b-blue-400 p-2 w-full' />
+          <input id="name" type="text" name='name' placeholder="Your Name" required className='h-12 rounded-xl border-b-2 bg-transparent border-b-amber-500 focus:border-b-blue-400 p-2 w-full' />
         </div>
         <div>
           <div className="mb-2 block">
           </div>
-          <input id="email" type="email" placeholder="Your Email" required className='h-12 rounded-xl border-b-2 bg-transparent border-b-amber-500 focus:border-b-blue-400 p-2 w-full' />
+          <input id="email" type="email" name='email' placeholder="Your Email" required className='h-12 rounded-xl border-b-2 bg-transparent border-b-amber-500 focus:border-b-blue-400 p-2 w-full' />
         </div>
         <div>
           <div className="mb-2 block">
           </div>
-          <input id="phone" type="number" placeholder="Your Phone Number" required className='h-12 rounded-xl border-b-2 bg-transparent border-b-amber-500 focus:border-b-blue-400 p-2 w-full' />
+          <input id="phone" type="number" name='phone number' placeholder="Your Phone Number" required className='h-12 rounded-xl border-b-2 bg-transparent border-b-amber-500 focus:border-b-blue-400 p-2 w-full' />
         </div>
         <div>
           <div className="mb-2 block">
           </div>
-          <input id="zipcode" type="number" placeholder="Your Zipcode" required className='h-12 rounded-xl border-b-2 bg-transparent border-b-amber-500 p-2 w-full' />
+          <input id="zipcode" type="number" name='zipcode' placeholder="Your Zipcode" className='h-12 rounded-xl border-b-2 bg-transparent border-b-amber-500 p-2 w-full' />
         </div>
         <button type="submit" className="bg-amber-400 rounded-xl h-14">Book Design Session</button>
         <p className="text-[10px] font-serif  text-center">By submitting this form, you agree to the privacy policy and terms of use</p>
