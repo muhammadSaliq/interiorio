@@ -11,7 +11,15 @@ function CcorouselNew() {
     backgroundSize: "cover",
     backgroundPosition: "center",
     };
-       
+    const containerStyle4 = {
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+      justifyContent: 'center',
+      width: '300px', // Adjust the width as needed
+
+      // background: 'url("https://www.osimo.com.tr/assets/images/media-bg.jpg") center/cover no-repeat',
+    }; 
     const containerStyle = {
         display: 'flex',
         flexDirection: 'column',
@@ -84,9 +92,9 @@ function CcorouselNew() {
 
   return (
         <>
-            <div className='flex  justify-evenly flex-wrap my-12' style={divStyle}>
-             <div style={containerStyle} >
-             <h1 className='font-bold text-4xl mb-6 mt-3 text-blue-900'>Dream Homes Begin With Dream Design </h1>
+            <div className='flex  justify-evenly flex-wrap my-4 sm:my-12' style={divStyle}>
+             <div style={containerStyle4}>
+             <h1 className='font-bold text-4xl mb-6 mt-3 text-center hidden sm:inline sm:text-left  text-blue-900'>Dream Homes Begin With Dream Design </h1>
       </div>
       <div style={containerStyle2} >
         
@@ -112,7 +120,7 @@ function CcorouselNew() {
       <Card className="w-80 bg-transparent dark:bg-transparent border-0 shadow-xl">
       <form action="https://api.web3forms.com/submit" method="POST" className="flex flex-col gap-4">
       <input type="hidden" name="access_key" value="37d14295-1269-448f-ae1a-921e8a9063b8"/>
-        <p className="text-2xl font-mono font-semibold">Meet A Designer</p>
+        <p className="text-2xl font-mono font-semibold ">Meet A Designer</p>
         <div>
           <div className="mb-2 block ">
           </div>

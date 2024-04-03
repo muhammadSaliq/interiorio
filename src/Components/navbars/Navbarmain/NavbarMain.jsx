@@ -11,7 +11,7 @@ const NavbarMain = () => {
       <NavContact/>
       <Navbar fluid rounded className='bg-white dark:bg-white mb-6 shadow-xl  '>
       <Navbar.Brand href="https://interiortest.vercel.app/">
-        <img src={logo} className="mr-3 h-16 sm:h-24" alt="Flowbite React Logo" />
+        <img src={logo} className="mr-3 h-20 sm:h-24" alt="Flowbite React Logo" />
       </Navbar.Brand>
       <div className="flex md:order-2">
         <Navbar.Toggle />

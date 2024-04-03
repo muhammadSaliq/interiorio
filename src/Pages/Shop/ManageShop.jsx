@@ -45,7 +45,7 @@ const ManageShop = () => {
       };
       const getAllProducts = async () => {
         try {
-          const response = await axios.get(`https://cobalt-blue-jellyfish-boot.cyclic.app/Allshop`);
+          const response = await axios.get(`http://localhost:8000/Allshop`);
           console.log("response: ", response);
           console.log(products);
           setProducts(response.data.data);
@@ -55,7 +55,7 @@ const ManageShop = () => {
       };
       const deleteData = async (id)=>{
         try {
-          const response = await axios.delete(`https://cobalt-blue-jellyfish-boot.cyclic.app/deleteshop/${id}`)
+          const response = await axios.delete(`http://localhost:8000/deleteshop/${id}`)
           console.log("response: ", response.data);
           setdelete(!Delete)
         } catch (error) {

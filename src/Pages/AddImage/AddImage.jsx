@@ -57,7 +57,7 @@ console.log("img",image1)
     try {
         if (service && project && image1) {
       const response = await axios.post(
-        "https://cobalt-blue-jellyfish-boot.cyclic.app/addimagetest",
+        "http://localhost:8000/addimagetest",
         formData,
         {
           headers: {

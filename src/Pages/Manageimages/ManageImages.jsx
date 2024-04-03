@@ -45,7 +45,7 @@ const ManageImages = () => {
       };
       const getAllProducts = async () => {
         try {
-          const response = await axios.get(`https://cobalt-blue-jellyfish-boot.cyclic.app/Allimage`);
+          const response = await axios.get(`http://localhost:8000/Allimage`);
           console.log("response: ", response);
           console.log(products);
           setProducts(response.data.data);
@@ -55,7 +55,7 @@ const ManageImages = () => {
       };
       const deleteData = async (id)=>{
         try {
-          const response = await axios.delete(`https://cobalt-blue-jellyfish-boot.cyclic.app/imagereq/${id}`)
+          const response = await axios.delete(`http://localhost:8000/imagereq/${id}`)
           console.log("response: ", response.data);
           setdelete(!Delete)
         } catch (error) {

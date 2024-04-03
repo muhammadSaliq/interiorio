@@ -56,7 +56,7 @@ console.log("img",image1)
     try {
         if (name && price && image1) {
       const response = await axios.post(
-        "https://cobalt-blue-jellyfish-boot.cyclic.app/addshopsell",
+        "http://localhost:8000/addshopsell",
         formData,
         {
           headers: {

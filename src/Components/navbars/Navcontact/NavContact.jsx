@@ -15,11 +15,11 @@ const NavContact = () => {
 let csss = "border-b-2 border-rose-500 text-black bg-gradient-to-r from-yellow-700 to-yellow-200"
 
   return (
-    <Navbar fluid rounded className='border-b-2 border-rose-500 text-black bg-white dark:bg-white '>
+    <Navbar fluid rounded className='border-b-2 border-rose-500 text-black bg-white dark:bg-white h-12 sm:h-20 pt-2 sm:pt-4 '>
     
-    <Navbar.Brand href="">
-    <img src={phones} className="mr-3 inline h-7 " alt="phone" />
-      <span className="self-center whitespace-nowrap text-xs font-semibold font-sans">Call Anytime <br /> <p className='text-lg font-sans'> 0335 1329550 </p></span>
+    <Navbar.Brand href="" className=''>
+    <img src={phones} className="mr-3 inline h-6 sm:h-7 " alt="phone" />
+      <span className="self-center whitespace-nowrap text-xs font-semibold font-sans"><span className=''>Call Anytime</span> <br /> <p className='text-sm sm:text-lg font-sans'> 0335 1329550 </p></span>
     </Navbar.Brand>
     <div className="flex md:order-2">
       <p className='text-black'>      
